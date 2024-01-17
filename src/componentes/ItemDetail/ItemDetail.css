@@ -1,0 +1,14 @@
+
+.contenedorItem {
+    text-align: center;
+    border: 1px solid #e3e1e1;
+    margin: 3rem;
+    width: 500px;
+}
+
+.img {
+   display: flex;
+   align-items: center;
+   justify-content: center;
+   width: 80%;
+}

@@ -1,0 +1,18 @@
+.botonera {
+    display: flex;
+    margin: 10px;
+    padding: 10px;
+    border-radius: 5px;
+    background-color: #fafafa
+}
+
+.botonera button {
+    flex-direction: row;
+    border-radius: 10px;
+}
+
+.botonera p {
+    color: black;
+    width: 20px;
+    padding: 10px;
+}
