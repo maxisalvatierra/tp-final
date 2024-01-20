@@ -20,19 +20,16 @@ const Checkout = () => {
     const manejadorSubmit = (event) => {
         event.preventDefault();
 
-        //Verificamos que todos los campos esten completos 
         if (!nombre || !apellido || !telefono || !email || !emailConfimacion) {
             setError("Por favor completa todos los campos o moriras!");
             return;
         }
 
-        //Validamos que el campo del email coincida: 
         if (email !== emailConfimacion) {
             setError("Los emails no coinciden, rata de dos patas!!");
             return;
         }
 
-        //Creamos un objeto con todos los datos de la orden de compra: 
 
         const orden = {
             items: carrito.map(producto => ({
@@ -48,24 +45,19 @@ const Checkout = () => {
             email
         }
 
-        //Vamos a modificar el código para que ejecute varias promesas en parelalo, por un lado que pueda crear la orden de compra y por el otro que actualice el stock: 
 
         Promise.all(
             orden.items.map(async (productoOrden) => {
-                //Por cada producto obtengo una referencia y a partir de esa referencia obtengo el DOC: 
                 const productoRef = doc(db, "productos", productoOrden.id);
                 const productoDoc = await getDoc(productoRef);
                 const stockActual = productoDoc.data().stock;
-                //recordemos, data() me permite obtener los datos del documento. 
 
                 await updateDoc(productoRef, {
                     stock: stockActual - productoOrden.cantidad
                 })
 
-                //Modifico el stock y subo la info actualizada. 
             })
         )
-            //Guardamos en la base de datos la orden: 
             .then(() => {
                 addDoc(collection(db, "ordenes"), orden)
                     .then(docRef => {
@@ -95,33 +87,31 @@ const Checkout = () => {
                         </div>
                     ))
                 }
-                <hr />
-
-                <div className="form-group">
+                <div className="formGroup">
                     <label htmlFor="name"> Nombre </label>
                     <input type="text" onChange={(e) => setNombre(e.target.value)} />
                     <div class="error-message" id="nameError"></div>
                 </div>
 
-                <div>
+                <div className="form-group">
                     <label htmlFor="apellido"> Apellido </label>
                     <input type="text" onChange={(e) => setApellido(e.target.value)} />
                     <div class="error-message" id="nameError"></div>
                 </div>
 
-                <div>
+                <div className="form-group">
                     <label htmlFor=""> Telefono </label>
                     <input type="number" onChange={(e) => setTelefono(e.target.value)} />
                     <div class="error-message" id="nameError"></div>
                 </div>
 
-                <div>
+                <div className="form-group">
                     <label htmlFor=""> Email </label>
                     <input type="email" onChange={(e) => setEmail(e.target.value)} />
                     <div class="error-message" id="nameError"></div>
                 </div>
 
-                <div>
+                <div className="form-group">
                     <label htmlFor=""> Email Confirmación </label>
                     <input type="email" onChange={(e) => setEmailConfirmacion(e.target.value)} />
                 </div>

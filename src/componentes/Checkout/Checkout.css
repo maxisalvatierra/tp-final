@@ -1,10 +1,14 @@
-.form-group {
-    margin-bottom: 15px;
-  }
+.form-group{
+  display: flex;
+
+  align-items: start;
+}
   
   label {
     display: block;
-    margin-bottom: 5px;
+    margin-bottom: 20px;
+    margin-right: 20px;
+
   }
   
   input[type="text"],
@@ -17,7 +21,7 @@
   
   button[type="submit"] {
     padding: 10px 20px;
-    background-color: #4CAF50;
+    background-color: darkgoldenrod;
     color: #fff;
     border: none;
     border-radius: 5px;

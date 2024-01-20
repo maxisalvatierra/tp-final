@@ -32,7 +32,7 @@ const ItemDetail = ({id, nombre, stock, precio, img}) => {
         <div className='img'>
         <Card.Footer><CardImg src={img}/></Card.Footer>
         </div>
-          <Card.Title> Precio:{precio}</Card.Title>
+          <Card.Title> Precio:${precio}</Card.Title>
           <Card.Text>
             Stock {stock}
           </Card.Text>

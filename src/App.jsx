@@ -6,12 +6,13 @@ import { CarritoProvider } from "./context/CarritoContext";
 import ItemListContainer from "./componentes/ItemListContainer/ItemListContainer";
 import Cart from "./componentes/Cart/Cart";
 import Checkout from "./componentes/Checkout/Checkout";
-
+import './App.css'
+import Footer from "./componentes/Footer/Footer";
 
 
 const App = () => {
   return (
-    <div>
+    <div className="color">
       <BrowserRouter>
       <CarritoProvider>
        <NavBar/> 
@@ -28,6 +29,7 @@ const App = () => {
   
 
        </BrowserRouter>
+       <Footer/>
     </div>
   )
 }

@@ -11,7 +11,7 @@ function Carrousel() {
         />
         <Carousel.Caption>
           <h5 className='titulos'>Clasicos</h5>
-          <p>Nulla vitae elit libero, a pharetra augue mollis interdum.</p>
+          <p>Disfruta de los Sabores Clasicos de nuestros productos</p>
         </Carousel.Caption>
       </Carousel.Item>
       <Carousel.Item>
@@ -22,7 +22,7 @@ function Carrousel() {
         />
         <Carousel.Caption>
           <h5 className='titulos'>Especiales</h5>
-          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+          <p>Pensados Especialmente para vos!</p>
         </Carousel.Caption>
       </Carousel.Item>
       <Carousel.Item>
@@ -34,7 +34,7 @@ function Carrousel() {
         <Carousel.Caption>
           <h5 className='titulos'>Premium</h5>
           <p>
-            Praesent commodo cursus magna, vel scelerisque nisl consectetur.
+           Un sabor mas alla de tu imaginación y tu paladar!
           </p>
         </Carousel.Caption>
       </Carousel.Item>

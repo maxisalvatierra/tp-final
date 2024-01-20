@@ -8,14 +8,15 @@ const CartWidget = () => {
 
     const imgCarrito = "https://cdn-icons-png.flaticon.com/512/3144/3144456.png"
   return (
-    <div>
+    <div className="cart">
       <Link to ="/cart">
         <img className="imgCarrito" src={imgCarrito} alt="Carrito de compras"/>
-
+      </Link>
+    <div className="numberCart">
         {
           cantidadTotal > 0 && <strong> {cantidadTotal} </strong>
         }
-      </Link>
+    </div>
     </div>
 
 

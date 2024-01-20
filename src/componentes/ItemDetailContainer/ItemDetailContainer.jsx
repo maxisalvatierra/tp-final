@@ -18,7 +18,7 @@ const ItemDetailContainer = () => {
           const nuevoProducto = {id: res.id, ...data};
           setProducto(nuevoProducto);
         } )
-        .catch(error => console.log("Se prohiben los findes ", error))
+        .catch(error => console.log("error", error))
     }, [idItem]) 
 
   return (

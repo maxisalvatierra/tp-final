@@ -1,8 +1,18 @@
-# React + Vite
+# Tuti Sandwiches
+## Descripción
+Este proyecto es una aplicación de e-commerce desarrollada en React que permite a los usuarios explorar productos, agregarlos al carrito de compras y realizar pedidos. Los productos y las ordenes de compra se almacenan en Firebase.
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+## Tecnologías Utilizadas
+-React
+-React Router
+-Boostrap
+-Firebase
+-Vite
 
-Currently, two official plugins are available:
+## Funcionalidades
+-Catálogo de productos con detalles.
+-Carrito de compras interactivo.
+-Administración de pedidos.
+-Emite una orden de compra simulando una venta
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+### Instalación

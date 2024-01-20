@@ -1,3 +1,17 @@
+
 .barraNav{
-    background-color: #6C3428;
+
+    background-color: #cdaa54;
+    margin: 10px;
+}
+
+.btnNav{
+    text-decoration: none;
+    color: wheat;
+    cursor: pointer;
+    
+}
+.btnNav:hover {
+    color: black;
+    transition: 1s;
 }
