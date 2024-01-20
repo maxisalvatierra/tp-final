@@ -6,7 +6,7 @@ function Carrousel() {
       <Carousel.Item>
         <img
           className="d-block w-100"
-          src='../public/carrousel1.jpg'
+          src='../img/carrousel1.jpg'
           alt="Clasicos"
         />
         <Carousel.Caption>
@@ -17,7 +17,7 @@ function Carrousel() {
       <Carousel.Item>
         <img
           className="d-block w-100"
-          src="../public/carrousel2.webp"
+          src="../img/carrousel2.webp"
           alt="Especiales"
         />
         <Carousel.Caption>
@@ -28,7 +28,7 @@ function Carrousel() {
       <Carousel.Item>
         <img
           className="d-block w-100"
-          src="../public/carrousel3.jpg"
+          src="../img/carrousel3.jpg"
           alt="Premium"
         />
         <Carousel.Caption>
